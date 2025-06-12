@@ -17,12 +17,11 @@ const getTourById = (id) => {
 }
 
 const createTour = () => {
-
-    /*   const newId = tours[tours.length - 1].id + 1;
-     const tourWithId = { id: newId, ...newTour };
-     tours.push(tourWithId);
-     writeDataToFile(tours);
-     return tourWithId;  */
+    const newId = tours[tours.length - 1].id + 1;
+    const tourWithId = { id: newId, ...newTour };
+    tours.push(tourWithId);
+    writeDataToFile(tours);
+    return tourWithId;  
 }
 
 const updateTour = (id, updatedTour) => {
